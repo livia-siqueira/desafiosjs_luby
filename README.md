@@ -1,4 +1,4 @@
-# desafiosjs_luby
+# <h1>LabLuby</h1>
 Desafios do primeiro módulo do programa de estágio LabLuby.
 
 Desafio 1 - Declaração de variáves e funções.
