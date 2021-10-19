@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 24 - Lívia Siqueira</title>
+    <style>
+        body {
+            width: 100%;
+            overflow: hidden;
+        }
+        #container {
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-items: center;
+            margin: 180px auto;
+            gap: 15px;
+        }
+        #entry input {
+            width: 180px;
+            height: 30px;
+            font-size: 20px;
+            margin-left: 100px;
+        }
+        #buttons {
+            width: 180px;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+        .buttonsLine {
+            display: flex
+        }
+        .buttonsColumn{
+            display: grid;
+            position:absolute;
+            left: 800px;
+        }
+        .buttonsColumn button{
+            background-color: tomato;
+            color: white;
+        }
+        button {
+            margin-top: 3px;
+            margin-left: 3px;
+            width: 60px;
+            height: 60px;
+            font-size: 25px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(300, 290, 90, 7);
+            color: black;
+            cursor: pointer;
+        }
+        button:hover {
+            color: white;
+            background-color: tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="entry">
+            <input value="0" data-js="entryNumbers" disabled>
+        </div>
+        <div id="buttons">
+            <div class="buttonsLine">
+                <button data-js="buttonNumber" value="0">0</button>
+                <button data-js="buttonNumber" value="1">1</button>
+                <button data-js="buttonNumber" value="2">2</button>
+            </div>
+            <div class="buttonsLine">
+                <button data-js="buttonNumber" value="3">3</button>
+                <button data-js="buttonNumber" value="4">4</button>
+                <button data-js="buttonNumber" value="5">5</button>
+
+            </div>
+            <div class="buttonsLine">
+                <button data-js="buttonNumber" value="6">6</button>
+                <button data-js="buttonNumber" value="7">7</button>
+                <button data-js="buttonNumber" value="8">8</button>
+            </div>
+            <div class="buttonsLine">
+                <button data-js="buttonNumber" value="9">9</button>
+                <button data-js="reset" value="Limpar">CE</button>
+                <button data-js="buttonEndOperation" value="=">=</button>
+            </div>
+            <div class="buttonsColumn">
+                <button data-js="buttonOperation" value="+">+</button>
+                <button data-js="buttonOperation" value="-">-</button>
+                <button data-js="buttonOperation" value="*">*</button>
+                <button data-js="buttonOperation" value="%">%</button>
+            </div> 
+        </div> 
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

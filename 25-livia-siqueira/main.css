@@ -1,0 +1,67 @@
+body {
+  box-sizing: border-box;
+  background-color: #292929;
+}
+
+#Container {
+  display: grid;
+  width: 50vw;
+  margin: 90px auto;
+  background-color: white;
+  border-radius: 30px;
+  padding: 8px;
+}
+#header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#header input {
+  width: 200px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: #e4e4e494;
+}
+
+#seeTasks ul {
+  list-style: none;
+}
+
+#seeTasks ul li {
+  display: flex;
+  width: 50%;
+  height: 40px;
+  justify-content: space-between;
+}
+button {
+  width: 25px;
+  height: 25px;
+  border: none;
+  text-align: center;
+  padding: 3px;
+  font-size: 15px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btnCompleted {
+  background-color: green;
+}
+
+.btnRemoved {
+  background-color: red;
+  margin-left: 3px;
+}
+.addcomplete{
+ text-decoration: line-through;
+}
+#add{
+  background-color: yellow;
+  color: black;
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  margin: 0;
+}
